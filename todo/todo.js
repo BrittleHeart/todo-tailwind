@@ -4,13 +4,15 @@ export class Todo {
     todos = [
         {
             content: '',
-            id: 0,
+            id: uuidv4(),
             completed: false
         }
     ]
 
     constructor() {
-        this.todos.id = uuidv4()
+        if (this.todos.length === 0)
+            console.log('Nothing to show')
+        console.log(this.todos)
     }
 
     index() {
