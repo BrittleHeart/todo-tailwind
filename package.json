@@ -4,7 +4,7 @@
   "description": "Todo app with tailwind usage",
   "main": "src/index.js",
   "scripts": {
-    "start": "npx tsnowpack dev"
+    "start": "npx snowpack dev"
   },
   "author": "Bartosz Pazdur <b.pazdur@yahoo.com>",
   "license": "MIT",
