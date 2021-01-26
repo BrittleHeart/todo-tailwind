@@ -2,14 +2,16 @@
   "name": "todo-tailwind",
   "version": "1.0.0",
   "description": "Todo app with tailwind usage",
-  "main": "index.js",
+  "main": "src/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "npx tsnowpack dev"
   },
   "author": "Bartosz Pazdur <b.pazdur@yahoo.com>",
   "license": "MIT",
   "dependencies": {
-    "snowpack": "^3.0.11",
     "tailwindcss": "^2.0.2"
+  },
+  "devDependencies": {
+    "snowpack": "^3.0.11"
   }
 }
