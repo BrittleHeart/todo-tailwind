@@ -1,13 +1,7 @@
 import {v4 as uuidv4} from 'uuid';
 
 export class Todo {
-    todos = [
-        {
-            content: '',
-            id: uuidv4(),
-            completed: false
-        }
-    ]
+    todos = []
 
     constructor() {
         if (this.todos.length === 0)
@@ -27,7 +21,7 @@ export class Todo {
         if (todo === undefined)
             throw new Error('Todo argument is required for create method!')
 
-        if (Object.keys(todo) !== ['content', 'completed'])
+        if (!('content' in todo) || !('completed' in todo))
             throw new Error(`{${Object.keys(todo).join('|')}} could not be assigned to {content, completed}`)
 
         const {
