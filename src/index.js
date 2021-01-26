@@ -1,9 +1,6 @@
-import { Todo } from '../todo/todo';
+import { Todo } from '../todo/todo.js';
+
 
 const newTodo = new Todo();
 
-newTodo.content = "First Todo"
-newTodo.id = 1
-newTodo.completed = false
-
-console.log(newTodo);
+newTodo.create({message: 'Hi', second: false})
