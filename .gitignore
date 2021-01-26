@@ -1,0 +1,10 @@
+# Editor directories
+.idea/
+.vscode/
+
+# Project dependencies
+node_modules/
+
+# Project Environments
+.env
+
